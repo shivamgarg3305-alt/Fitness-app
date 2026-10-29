@@ -13,6 +13,8 @@
     "lint": "pnpm --filter @vitacore/mobile lint",
     "typecheck": "pnpm -r --if-present typecheck",
     "test": "pnpm -r --if-present test",
-    "audit:release": "bash scripts/release-audit.sh"
+    "audit:release": "bash scripts/release-audit.sh",
+    "eas:preview:android": "cd apps/mobile && npx eas-cli build --platform android --profile preview",
+    "eas:production:android": "cd apps/mobile && npx eas-cli build --platform android --profile production"
   }
 }

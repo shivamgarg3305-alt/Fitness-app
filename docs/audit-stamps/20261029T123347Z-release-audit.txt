@@ -1,0 +1,42 @@
+VitaCore release audit stamp
+UTC: 2026-10-29T12:33:47Z
+Commit: 7789274f4beff486fe8e25deeeb097e952cfcc09
+Branch: cursor/vitacore-eas-modernize-f90d
+
+== pnpm typecheck ==
+packages/brand typecheck$ tsc --noEmit
+packages/domain typecheck$ tsc --noEmit
+packages/brand typecheck: Done
+packages/domain typecheck: Done
+apps/mobile typecheck$ tsc --noEmit
+apps/mobile typecheck: Done
+
+== pnpm test ==
+Scope: 3 of 4 workspace projects
+
+ RUN  v5.0.1 /workspace/packages/domain
+
+
+ Test Files  16 passed (16)
+      Tests  280 passed (280)
+   Start at  12:33:52
+   Duration  776ms (transform 51%, tests 27%, import 18%, worker 5%)
+
+    Isolate  16 workers spawned · ~76ms startup each (spawn + environment, per file)
+             at least ~331ms faster with isolate: false — reuses workers across files instead of one per file
+
+
+== pnpm lint ==
+
+== expo config --type public ==
+expo config --type public: PASS
+
+== expo config --json --full ==
+expo config --json --full: PASS
+
+== expo-doctor ==
+Running 21 checks on your project...
+21/21 checks passed. No issues detected!
+expo-doctor: PASS (exit 0)
+
+Device builds, live Supabase RLS, and store submission were NOT run.
