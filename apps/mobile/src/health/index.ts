@@ -1,0 +1,25 @@
+export {
+  checkPlatformHealth,
+  connectPlatformHealth,
+  getHealthPermissionStatus,
+  openPlatformHealthSettings,
+  readActiveEnergy,
+  readDistance,
+  readHeartRateVariability,
+  readRecentWorkouts,
+  readRestingHeartRate,
+  readSleep,
+  readSteps,
+} from "./native";
+export type {
+  ActiveEnergyReading,
+  DistanceReading,
+  ExternalWorkoutSample,
+  HealthConnection,
+  HealthPermissionStatus,
+  HeartRateReading,
+  HrvReading,
+  SleepReading,
+  StepReading,
+  WorkoutsReading,
+} from "./types";

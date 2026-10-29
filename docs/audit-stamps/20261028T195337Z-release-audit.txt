@@ -1,0 +1,44 @@
+VitaCore release audit stamp
+UTC: 2026-10-28T19:53:37Z
+Commit: efc9c8c590b70fac9389b5128269d2276a4f9aa2
+Branch: cursor/final-code-vitacore-41cb
+
+== pnpm typecheck ==
+packages/brand typecheck$ tsc --noEmit
+packages/domain typecheck$ tsc --noEmit
+packages/brand typecheck: Done
+packages/domain typecheck: Done
+apps/mobile typecheck$ tsc --noEmit
+apps/mobile typecheck: Done
+
+== pnpm test ==
+Scope: 3 of 4 workspace projects
+
+ RUN  v5.0.1 /workspace/packages/domain
+
+
+ Test Files  16 passed (16)
+      Tests  280 passed (280)
+   Start at  19:53:41
+   Duration  882ms (transform 50%, tests 25%, import 20%, worker 5%)
+
+    Isolate  16 workers spawned · ~81ms startup each (spawn + environment, per file)
+             at least ~353ms faster with isolate: false — reuses workers across files instead of one per file
+
+
+== pnpm lint ==
+env: load .env
+env: export EXPO_PUBLIC_MAP_TILE_STYLE_URL EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY EXPO_PUBLIC_SUPABASE_URL
+
+== expo config --type public ==
+expo config --type public: PASS
+
+== expo config --json --full ==
+expo config --json --full: PASS
+
+== expo-doctor ==
+Running 21 checks on your project...
+21/21 checks passed. No issues detected!
+expo-doctor: PASS (exit 0)
+
+Device builds, live Supabase RLS, and store submission were NOT run.

@@ -1,0 +1,39 @@
+VitaCore release audit stamp
+UTC: 2026-10-28T12:18:11Z
+Commit: 1ac985cdc6a536d06a32564ff088640c0a39b9ae
+Branch: cursor/release-audit-41cb
+
+== pnpm typecheck ==
+packages/domain typecheck$ tsc --noEmit
+packages/brand typecheck$ tsc --noEmit
+packages/brand typecheck: Done
+packages/domain typecheck: Done
+apps/mobile typecheck$ tsc --noEmit
+apps/mobile typecheck: Done
+
+== pnpm test ==
+Scope: 3 of 4 workspace projects
+
+ RUN  v5.0.1 /workspace/packages/domain
+
+
+ Test Files  12 passed (12)
+      Tests  233 passed (233)
+   Start at  12:18:14
+   Duration  526ms (transform 52%, tests 25%, import 18%, worker 5%)
+
+
+== pnpm lint ==
+
+== expo config --type public ==
+expo config --type public: PASS
+
+== expo config --json --full ==
+expo config --json --full: PASS
+
+== expo-doctor ==
+Running 21 checks on your project...
+21/21 checks passed. No issues detected!
+expo-doctor: PASS (exit 0)
+
+Device builds, live Supabase RLS, and store submission were NOT run.
