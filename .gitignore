@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+.env*.local
+
+# Expo / Metro
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+.metro-health-check*
+
+# Generated native projects (CNG / prebuild)
+apps/mobile/android/
+apps/mobile/ios/
+android/
+ios/
+
+# Native signing / keys
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.pem
+.kotlin/
+
+# Logs / debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.log
+*.tsbuildinfo
+
+# OS / editor
+.DS_Store
+.idea/
+*.swp
+
+# Package manager noise (this repo uses pnpm only)
+package-lock.json
+yarn.lock
+apps/mobile/package-lock.json
+apps/mobile/yarn.lock
+
+# Expo config lives in apps/mobile/app.config.ts only — never commit stray app.json
+app.json
+apps/mobile/app.json
+/app.json
