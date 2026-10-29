@@ -35,7 +35,8 @@ In [Expo → Project → Environment variables](https://expo.dev), for the **pre
 - `EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY`
 - Optional: `EXPO_PUBLIC_MAP_TILE_STYLE_URL`
 
-Configured project ID in repo: see `apps/mobile/app.config.ts` → `extra.eas.projectId`.  
+Expo project: `@shivamjjje/vitacore`  
+Project ID: `a433b256-f33c-4ad3-ac69-ccaef115cb86` (`apps/mobile/app.config.ts` → `extra.eas.projectId`).  
 Android application ID: `app.vitacore.mobile` (from `packages/brand/brand.json`).
 
 ## If EAS failed at “Read app config” / “expo is not installed”
