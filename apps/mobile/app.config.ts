@@ -141,7 +141,8 @@ const config: ExpoConfig = {
   extra: {
     brand: brand.name,
     eas: {
-      projectId: "151e9e78-075f-4d80-b81e-ccc02208ba2f",
+      // Replaced stale ID 151e9e78-… (did not exist on @shivamjjje). Created via eas init.
+      projectId: "a433b256-f33c-4ad3-ac69-ccaef115cb86",
     },
     // Public runtime env expected at build time (see .env.example / README EAS section).
     // Values come from process.env / EAS secrets — never hardcode secrets here.
